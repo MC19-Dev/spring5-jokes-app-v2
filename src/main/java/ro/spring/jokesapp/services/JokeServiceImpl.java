@@ -7,15 +7,15 @@ import org.springframework.stereotype.Service;
  * @author MC19
  */
 @Service
-public class QuoteServiceImpl implements QuoteService {
+public class JokeServiceImpl implements JokeService {
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public QuoteServiceImpl() {
+    public JokeServiceImpl() {
         this.chuckNorrisQuotes = new ChuckNorrisQuotes();
     }
 
     @Override
-    public String getQuote() {
+    public String getJoke() {
         return chuckNorrisQuotes.getRandomQuote();
     }
 }
